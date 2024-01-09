@@ -5,7 +5,7 @@ pipeline {
         stage('Clean') {
             steps {
                 // Nettoie le projet
-                withMaven(maven: 'maven') {
+                withMaven(maven: 'Maven 3.9.6') {
                     bat 'mvn clean'
                 }
             }
@@ -14,7 +14,7 @@ pipeline {
         stage('Compile') {
             steps {
                 // Compile le projet
-                withMaven(maven: 'maven') {
+                withMaven(maven: 'Maven 3.9.6') {
                     bat 'mvn compile'
                 }
             }
@@ -23,7 +23,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Exécute les tests
-                withMaven(maven: 'maven') {
+                withMaven(maven: 'Maven 3.9.6') {
                     bat 'mvn test'
                 }
             }
@@ -32,7 +32,7 @@ pipeline {
         stage('Package') {
             steps {
                 // Crée le package (par exemple, JAR ou WAR)
-                withMaven(maven: 'maven') {
+                withMaven(maven: 'Maven 3.9.6') {
                     bat 'mvn package'
                 }
             }
@@ -41,7 +41,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Déploie le projet (cette étape dépend de votre configuration)
-                withMaven(maven: 'maven') {
+                withMaven(maven: 'Maven 3.9.6') {
                     bat 'mvn deploy'
                 }
             }
