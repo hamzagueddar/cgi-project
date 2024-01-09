@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        // Vous pouvez spécifier des variables d'environnement si nécessaire
-    }
-
     stages {
         stage('Clean') {
             steps {
