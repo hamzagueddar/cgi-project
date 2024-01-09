@@ -84,7 +84,7 @@
   <distributionManagement>
     <repository>
         <id>internal.repo</id>
-        <url>C:\ProgramData\Jenkins\.jenkins</url>
+        <url>file:///C:/ProgramData/Jenkins/.jenkins</url>
     </repository>
 </distributionManagement>
 </project>
