@@ -81,4 +81,10 @@
       </plugins>
     </pluginManagement>
   </build>
+  <distributionManagement>
+    <repository>
+        <id>internal.repo</id>
+        <url>D:\</url>
+    </repository>
+</distributionManagement>
 </project>
